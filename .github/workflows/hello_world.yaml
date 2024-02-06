@@ -1,12 +1,12 @@
 name: Hello World
 
-  on:
-    push:
-      - main
-    pull_request:
-      branches:
-         -main
-    workflow_dispatch:
+on:
+  push:
+    - main
+  pull_request:
+    branches:
+      -main
+  workflow_dispatch:
 
 
   jobs: 
@@ -17,7 +17,6 @@ name: Hello World
         - name: hello-world
           run: echo "Hello world"
           shell: bash 
-
 
      good-bye: 
       runs-on: ubuntu-latest
