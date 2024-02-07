@@ -1,5 +1,4 @@
 name: Hello World
-
 on:
   push:
     - main
@@ -8,9 +7,8 @@ on:
       -main
   workflow_dispatch:
 
-
-  jobs: 
-    hello:
+jobs: 
+  hello:
       runs-on: ubuntu-latest
       steps: 
         - uses: actions/checkout@v2
@@ -18,7 +16,7 @@ on:
           run: echo "Hello world"
           shell: bash 
 
-     good-bye: 
+   good-bye:
       runs-on: ubuntu-latest
       steps: 
        - name: goodbye world
